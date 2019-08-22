@@ -1,0 +1,459 @@
+.container{
+	width:100%;
+	float:left;
+	position:relative;
+	background:#000;
+}
+
+.innerContainer{
+	position:relative;
+	max-width:1024px;
+	width:100%;
+	background:white;
+	margin:0 auto;
+}
+
+.topPane{
+	position:relative;
+	width:100%;
+	background:#454545;
+	float:left;
+	margin:0px;
+	border-bottom:5px solid #bcd146;
+	padding-bottom:7px;
+}
+
+.title{
+	width:30%;
+	float:left;
+}
+.menu{
+	width:70%;
+	float:left;
+}
+
+.menu ul{
+	position:relative;
+	width:100%;
+}
+.menu ul li{
+	position:relative;
+	width:14%;
+	list-style-type:none;
+	float:left;
+	color:white;
+	margin-top:15px;	
+	left:10%;
+}
+
+.title h1{
+	position:relative;
+	padding:20px 0px 0px 80px;
+	color:white;
+	font-weight:normal;
+	margin-top:0px;
+}
+
+.title h4{
+	position:absolute;
+	top:40%;
+	left:10%;
+	color:white;
+	font-weight:normal;
+}
+
+.imgPane{
+	position:relative;
+	width:100%;
+	background:#5f6466;
+	float:left;
+}
+
+.leftImg{
+	width:40%;
+	float:left;
+}
+
+.leftImg img{
+	margin: 7% 0 10% 8%;
+	float:left;
+	width:90%
+}
+
+.rightText{
+	width:60%;
+	float:left;
+}
+
+#n1{
+	width:70%;
+	color:white;
+	font-size:20pt;
+	padding:0 0 0 5%;
+	font-family:calibri;
+	margin-bottom:0px;
+}
+
+#n2{
+	width:70%;
+	color:#918d8a;
+	font-size:18pt;
+	padding:0 0 0 5%;
+	font-family:calibri;
+	margin-bottom:15px;
+	margin-top:20px;
+	line-height:100%;
+}
+
+#b1{
+	width:17%;
+	margin-left:5%;
+	background:#c2d845;
+	border-radius:10px;
+	padding:5px 0 5px 0;
+	border: 1px solid black;
+}
+
+.midPane{
+	position:relative;
+	width:100%;
+	background:white;
+	float:left;	
+	text-align:justify;
+	padding-bottom:20px;
+	border-bottom:5px solid #b9cd50;
+}
+.leftContent{
+	width:calc(55% - 42px);
+	float:left;
+	padding: 0 10px 0 32px;
+}
+.bigB{
+	width:100%;
+	font-size:20pt;
+	padding:0 0 1% 0;
+	font-family:calibri;
+	margin-bottom:0px;
+	font-weight:normal;
+	margin-top:40px;
+	border-bottom:1px solid #b9cd50;
+	
+}
+.bigB::before{
+	position:absolute;
+	border-bottom:5px solid #b9cd50;
+	content:"";
+	width:10%;
+	height:37px;
+}
+.leftContent .para1{
+	font-family:calibri;
+}
+
+.leftContent .para2{
+	font-family:calibri;
+	color:gray;
+}
+
+.leftContent ul li{
+	font-family:calibri;
+	padding-left:10px;
+	list-style-type:square;
+}
+
+#leftBorder{
+	position:relative;
+	border-left:9px solid #b9cd50;
+	padding-left:25px;
+	font-family:calibri;
+}
+
+.rightContent{
+	width:45%;
+	float:left;
+}
+
+
+.rightContent .tableDiv{
+	margin:50px 0 0 45px;
+	width:70%;
+}
+.tableDiv .tabTitle td{
+	background:#404040;
+	color:white;
+	padding: 10px 0 10px 20px;
+	font-family:calibri;
+	font-size:18pt;
+	border:none;
+}
+
+.tableDiv .row1, .row3{
+	background:#efefef;
+}
+
+.tableDiv .img1, .img2, .img3{
+	padding:22px 10px 20px 17px;
+}
+
+.tableDiv .row2{
+	background:#dfdfdf;
+}
+
+.tableDiv .con1{
+	padding:10px 10px 17px 0px;
+}
+
+.tableDiv .con2, .con3{
+	padding:14px 10px 17px 0px;
+}
+
+.botPane{
+	position:relative;
+	width:100%;
+	float:left;
+	background:#2e3033;
+	padding-bottom:30px;
+}
+
+.botPane .list1{
+	width:15%;
+	float:left;
+	color:Gray;
+	margin:15px 10px 0 40px;
+	line-height:125%;
+	font-family:calibri;
+}
+
+.botPane .list5{
+	width:15%;
+	float:left;
+	color:Gray;
+	margin:15px 10px 0 20px;
+	line-height:125%;
+	font-family:calibri;
+}
+
+.botPane .list2, .list3, .list4{
+	width:15%;
+	float:left;
+	color:gray;
+	margin:15px 10px 0 20px;
+	line-height:125%;
+	font-family:calibri;
+}
+
+.botPane .list1 ul li{
+	width:100%;
+	list-style-type:none;
+}
+
+.botPane .list2 ul li, .list3 ul li, .list4 ul li{
+	width:100%;
+	list-style-type:none;
+}
+
+.botPane .list5 ul li{
+	width:100%;
+	list-style-type:none;
+}
+
+.botPane .active{
+	color:white;
+}
+@media only screen and (max-width: 776px) {
+	.botPane .list1{
+	 width:14%;
+	 margin:15px 10px 0 27px;
+	}	 
+}
+
+@media only screen and (max-width: 974px) {
+	.rightText {
+    width: 60%;
+    padding-bottom:15px;
+}
+}
+
+@media only screen and (max-width: 806px) {
+	.bigB::before{
+	position:absolute;
+	height:36px;
+	
+}
+}
+
+@media (max-width: 602px) {
+	.rightContent{
+	width:100%
+}
+    .leftContent{
+	width:80%
+}
+}
+
+@media(max-width: 606px) {
+	.bigB::before{
+	position:absolute;
+	height:35px;
+}
+}
+
+@media(max-width: 366px) {
+	.bigB::before{
+	position:absolute;
+	height:26px;
+}
+}
+
+
+@media only screen and (max-width: 990px) {
+	.bigB::before{
+	position:absolute;
+	width:100px;
+}
+}
+
+@media only screen and (max-width: 730px) {
+	
+	.leftImg{
+	width:80%;
+	 margin-left:7%;
+}
+.leftImg img{
+	margin: 7% 0 0 8%;
+ 
+}
+
+.rightText{
+	width:100%;
+	 
+}
+#n1{
+	 
+	padding:0 0 0 17%;
+	font-size:17pt;
+	 
+}
+
+#n2{
+	 padding:0 0 0 17%;
+	 font-size:15pt;
+}
+
+#b1{
+	 
+	margin-left:17%;
+	 
+}
+}
+
+@media only screen and (max-width: 725px) {
+	.title h1{
+	padding:20px 0px 0px 20px;
+	font-size:22pt;
+	
+}
+.title h4{
+	position:absolute;
+	top:34%;
+	left:5%;
+	
+}
+.menu ul li {
+
+    position: relative;
+    width: 16%;
+    margin-top: 15px;
+    left: 1%;
+
+}
+}
+
+.menu select {
+  display: none;
+}
+
+@media (max-width: 615px) {
+  .menu ul     {
+	  display: none; 
+  }
+  .menu select { 
+	  display: inline-block;
+	  width:30%;
+	  padding:3px;
+	  float:right;
+	  margin:27px 85px 0 0;
+	  background:gray;
+	  color:white;
+	  
+  
+  }
+}
+@media (max-width: 390px) {
+  .menu ul     {
+	  display: none; 
+  }
+  .menu select { 
+	  display: inline-block;
+	  width:30%;
+	  padding:3px;
+	  float:right;
+	  margin:27px 20px 0 0;
+	  background:gray;
+	  color:white;
+	  text-decoration:bold;
+  
+  }
+}
+
+@media only screen and (max-width:366px) {
+	
+	.bigB{
+	font-size:14pt;
+}
+	.bigB::before{
+	width:70px;
+}
+}
+@media only screen and (max-width:666px) {
+	
+	.botPane .list1{
+	 width:10%;
+	 margin:15px 10px 0 15px;
+	}
+	.botPane .list2, .list3, .list4{
+	width:10%;
+	margin:15px 10px 0 25px;
+	line-height:125%;
+	font-family:calibri;
+	}
+	.botPane .list5{
+	 width:10%;
+	 margin:15px 10px 0 25px;
+	}
+}
+@media only screen and (max-width:480px) {
+	
+	.botPane .list1{
+	 width:8%;
+	}
+	.botPane .list2, .list3, .list4{
+	width:8%;
+	}
+	.botPane .list5{
+	 width:8%;
+	}
+	.botPane{
+		font-size:8pt;
+	}
+}
+
+@media only screen and (max-width:400px) {
+	
+	.botPane .list2, .list3, .list4{
+	width:6%;
+	}
+	.botPane{
+		font-size:6pt;
+	}
+}
