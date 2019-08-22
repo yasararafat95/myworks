@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+ <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<title>helicount</title>
+
+</head>
+<style>
+	.counter {
+	border: 1px solid black;
+	padding: 3px;
+}
+	.img_counter1{
+		position: absolute;
+	}
+	</style>
+<body>
+<button class="restart">restart</button>
+<button class="stop">pause</button>
+<button class="resume">resume</button>
+<button class="start">start</button>
+	<img class="img_counter1" src="001001.png">
+	
+</body>
+<script>
+$(document).ready(function(){
+	
+$(".stop").click(function(){
+	play_pause_flag = false;
+	//clearInterval(ddd);
+});
+
+$('.resume').on('click', function(){
+	play_pause_flag = true;
+	//ddd = setInterval(timer, 1000);
+});
+
+
+$('.restart').on('click', function(){
+	i=1;
+	$('.img_counter1').text(i);
+	//ddd = setInterval(timer, 1000);
+});
+var i = 1;;	
+var ddd;
+
+var count = 0;
+var play_pause_flag = true;
+var in_flag = true;	
+	
+$(".start").click(function(){
+	i = 1;
+	ddd = setInterval(timer,40);
+});
+
+function timer() {
+
+	if(play_pause_flag == true){
+		
+	
+		if(in_flag == false){
+			
+			i--;
+			
+			if(i==1){
+				in_flag = true;
+			}
+		}
+		else{
+			
+			i++;
+			
+			if(i==45){
+				in_flag = false;
+			}	
+		}
+		
+		$(".img_counter1").attr("src", "00100" + i + ".png");
+		$('.img_counter1').text(i);
+	
+	}
+	
+	
+}
+
+});
+	</script>
+</html>
